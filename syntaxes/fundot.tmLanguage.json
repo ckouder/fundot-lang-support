@@ -1,0 +1,42 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Fundot",
+	"patterns": [
+		{ "include": "#keywords" },
+		{ "include": "#strings" },
+		{ "include": "#builtinFunctions" },
+		{ "include": "#setters" }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.fundot",
+				"match": "\\b(if|while|cond|defun|lambda|quit)\\b"
+			}]
+		},
+		"builtinFunctions": {
+			"patterns": [{
+				"name": "entity.name.function.fundot",
+				"match": "\\b(global|scan|print|add|sub|mul|div|mod|comp=|comp>|comp<|comp>=|comp<=)[,| ]"
+			}]
+		},
+		"strings": {
+			"name": "string.fundot",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.fundot",
+					"match": "\\\\."
+				}
+			]
+		},
+		"setters": {
+			"patterns": [{
+				"name": "support.type.property-name",
+				"match": "\\b(\\w+)\\b:"
+			}]
+		}
+	},
+	"scopeName": "source.fd"
+}

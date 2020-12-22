@@ -1,0 +1,31 @@
+{
+    "name": "fundot-lang-support",
+    "license": "MIT",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/ckouder/fundot-lang-support.git"
+    },
+    "displayName": "fundot-lang-support",
+    "publisher": "ckouder",
+    "description": "Add syntax highlight support for fundot",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fundot",
+            "aliases": ["Fundot", "fundot"],
+            "extensions": [".fd"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fundot",
+            "scopeName": "source.fd",
+            "path": "./syntaxes/fundot.tmLanguage.json"
+        }]
+    }
+}
