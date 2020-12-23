@@ -19,13 +19,15 @@
         "languages": [{
             "id": "fundot",
             "aliases": ["Fundot", "fundot"],
-            "extensions": [".fd"],
+            "extensions": [".fd", ".fun"],
             "configuration": "./language-configuration.json"
         }],
-        "grammars": [{
-            "language": "fundot",
-            "scopeName": "source.fd",
-            "path": "./syntaxes/fundot.tmLanguage.json"
-        }]
+        "grammars": [
+            {
+                "language": "fundot",
+                "scopeName": "source.fd",
+                "path": "./syntaxes/fundot.tmLanguage.json"
+            }
+        ]
     }
 }

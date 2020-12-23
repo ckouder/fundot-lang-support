@@ -6,4 +6,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+- Add support to `.fun` file extension
+
+## 0.0.1
+
 - Initial release
